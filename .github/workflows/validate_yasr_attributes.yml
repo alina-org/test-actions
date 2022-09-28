@@ -1,0 +1,14 @@
+name: Test merge behaviour
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+
+jobs:
+  validate_attributes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Finished"
