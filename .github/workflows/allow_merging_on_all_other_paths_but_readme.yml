@@ -1,0 +1,13 @@
+name: Test merge behaviour
+on:
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+
+jobs:
+  validate_attributes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - run: echo "No checks required."
