@@ -12,4 +12,4 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v3
-      - run: echo "Finished"
+      - run: exit 1
