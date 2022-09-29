@@ -5,8 +5,9 @@ on:
       - 'README.md'
 
 jobs:
-  validate_attributes:
+  test_merge_behaviour:
     runs-on: ubuntu-latest
+    name: Test merge behaviour
     permissions:
       contents: read
     steps:
